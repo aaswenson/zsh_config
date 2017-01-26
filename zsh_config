@@ -6,7 +6,7 @@
 
 export MANPATH="/usr/local/man:$MANPATH"
 
-
+plugins=(gedit)
 export PATH="${PATH}:/usr/local/bin"
 export PATH="${PATH}:/usr/bin:/bin:"
 export PATH="${PATH}:/usr/sbin:/sbin"
@@ -16,7 +16,7 @@ export LC_ALL='en_US.UTF-8'
 export LANG='en_US.UTF-8'
 ####---------------------------------------------------####
 
-DEFAULT_USER=mouginot
+DEFAULT_USER=alex
 export hostname=`hostname -s`
 export WORK_PATH="$HOME/work"
 export APP_PATH="${WORK_PATH}/app"
@@ -38,52 +38,25 @@ export pi='192.168.1.5'
 export git='git@github.com:Baaaaam/'
 export glab='git@gitlab.in2p3.fr:baaaaam/'
 
+# PATH for MCNP executables
+export PATH
+PATH="/home/alex/opt/MCNP/MCNP_CODE/bin:/home/alex/bin:/home/alex/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
 
 
-####---------------------------------------------------####
-# Compilation
-
-
-####---------------------------------------------------####
-
-
-####---------------------------------------------------####
-# MCNP
-
-export MCNP_PATH=${APP_PATH}/MCNP
-
-export PATH=$MCNP_PATH/MCNP_CODE/MCNP6/bin/:${PATH}
-#export DATAPATH ="$MYHOME/base/MCNP_DATA"
-
-
-####---------------------------------------------------####
-# SERPENT
-export SERPENT_PATH="${APP_PATH}/Serpent/"
-export PATH=${PATH}:${SERPENT_PATH}
-
-####---------------------------------------------------####
-# root
-
-####---------------------------------------------------####
-
-
-####---------------------------------------------------####
-# CLASS package libraries
-
-export CLASS_PATH=${APP_PATH}/CLASS
-export CLASS_include=${CLASS_PATH}/source/include
-export CLASS_DB=${CLASS_PATH}/Database
-export CLASS_lib=${CLASS_PATH}/lib
-export PATH=${PATH}:${CLASS_PATH}/gui/bin
-
-####---------------------------------------------------####
-
-
-
-
-
-
-
+# DATAPATH for MCNP cross-section data
+export DATAPATH
+DATAPATH="/home/alex/opt/MCNP/MCNP_DATA"
+ 
+alias matlab='/usr/local/bin/matlab'
+export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
+export PATH=$PATH:/home/alex/install/moab/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/alex/install/moab/lib
+alias pyne-install="python setup.py install --user -- -DMOAB_LIBRARY=/home/alex/install/moab/lib/libMOAB.so -DMOAB_INCLUDE_DIR=/home/alex/install/moab/include"
+alias condor="ssh aaswenson@aci-service-1.chtc.wisc.edu"
+alias wifi="sudo service network-manager restart"
+export PYTHONPATH=$HOME/.local/lib/python2.7/site-packages/PyTAPS-1.4-py2.7-linux-x86_64.egg
+export PATH=$PATH:/home/alex/opt/scale6.1/cmds/batch6.1
+alias batch6.1="~/opt/scale6.1/cmds/batch6.1"
 
 
 

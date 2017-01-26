@@ -1,8 +1,8 @@
 [alias]
  plog = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s%Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --graph --decorate --date=relative
 [user]
-	name = MOUGINOT B.
-	email = mouginot.baptiste@gmail.com
+	name = Alexander Swenson.
+	email = aaswenson@wisc.edu
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
