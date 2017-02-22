@@ -21,19 +21,8 @@ source $HOME/.zsh_config/zsh_alias
 
 
 
-if [[ `hostname -s` =~ 'CoffeeBean' || `hostname` =~ 'engr.wisc.edu' ]]; then
-  export COMP='mbp'
-  source $HOME/.zsh_config/zsh_local
-  test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-elif [[ `hostname -s` =~ 'submit-3' ]]; then
-  export COMP='HTC'
-  source $HOME/.zsh_config/zsh_condor
-elif [[ `hostname -s` =~ 'kermit' ]]; then
-  export COMP='kermit'
-  source $HOME/.zsh_config/zsh_kermit
-elif [[ `hostname -s` =~ 'raspberrypi' ]]; then
-  export COMP='rπ3'
-  source $HOME/.zsh_config/zsh_pi
-fi
+
+export PATH=$PATH:/opt/Trelis-16.1/bin
+
 
 source $HOME/.zsh_config/zsh_ohmzsh
