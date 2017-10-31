@@ -1,6 +1,7 @@
 #!/bin/zsh
 
 
+
 alias source_zshrc="source $HOME/.zshrc"
 alias source_alias="source $HOME/.zsh_config/zsh_alias"
 alias source_config="source $HOME/.zsh_config/zsh_config"
@@ -19,7 +20,7 @@ alias nedit='open -a Sublime\ Text'
 alias gedit='Xcode'
 alias finder='open -a finder'
 alias root='root -l'
-
+alias nosetests='nosetests --no-byte-compile'
 alias vi='vim'
 
 alias cdw='cd ${WORK_PATH}'
@@ -29,7 +30,6 @@ alias cyclus_debug='export CYCLUS_NO_CATCH=1'
 ##########################
 ##########################
 alias todo='git -C ~/work/todo fetch origin; git -C ~/work/todo rebase origin master; vi  ~/work/todo/todo.md; git -C  ~/work/todo commit -am"update";git -C  ~/work/todo push -q'
-
 
 
 
@@ -87,3 +87,6 @@ alias mount='sudo mount'
 alias srm='mv -v \!* $HOME/.Trash/'
 alias mv='mv -v'
 alias ssh='ssh -X'
+alias euler='ssh -X aaswenson@euler.wacc.wisc.edu'
+alias open='xdg-open'
+alias julia='/home/alex/opt/julia/julia'

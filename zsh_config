@@ -42,7 +42,6 @@ export glab='git@gitlab.in2p3.fr:baaaaam/'
 export PATH
 PATH="/home/alex/opt/MCNP/MCNP_CODE/bin:/home/alex/bin:/home/alex/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
 
-
 # DATAPATH for MCNP cross-section data
 export DATAPATH
 DATAPATH="/home/alex/opt/MCNP/MCNP_DATA"

@@ -18,7 +18,7 @@ augroup resCur
   autocmd BufReadPost * call setpos(".", getpos("'\""))
 augroup END
 
-
+colorscheme darkmate
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
@@ -41,8 +41,8 @@ set tabstop=4
 
 
 " Linebreak on 80 characters
-"set lbr
-"set tw=80
+set lbr
+set tw=80
 
 set ai "Auto indent
 set si "Smart indent
@@ -110,3 +110,6 @@ autocmd FileType c,cpp,objc map <buffer><Leader>x <Plug>(operator-clang-format)
 " Toggle auto formatting:
 nmap <Leader>C :ClangFormatAutoToggle<CR>
 autocmd FileType c,cpp,ojbc setlocal formatprg=clang-format\ -
+:command W w
+:command Wq wq
+:command Q q

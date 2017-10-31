@@ -1,4 +1,4 @@
-#!/bin/zsh
+#/bin/zsh
 
 # Killer: share history between multiple shells
 setopt SHARE_HISTORY
@@ -10,7 +10,7 @@ setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_ALL_DUPS
 
 
-DEFAULT_USER=mouginot
+DEFAULT_USER=aaswenson
 if [[ ! `hostname -s` =~ 'submit-3' ]]; then
   source $HOME/.zsh_config/zsh_config
 fi
@@ -18,7 +18,6 @@ fi
 source $HOME/.zsh_config/zsh_perso
 
 source $HOME/.zsh_config/zsh_alias
-
 
 
 
