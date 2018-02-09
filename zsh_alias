@@ -90,3 +90,5 @@ alias ssh='ssh -X'
 alias euler='ssh -X aaswenson@euler.wacc.wisc.edu'
 alias open='xdg-open'
 alias julia='/home/alex/opt/julia/julia'
+alias python="python -B"
+alias python3="python3 -B"

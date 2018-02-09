@@ -1,3 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/home/alex/EP759/HW06'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/alex/.ssh'
+let g:netrw_dirhist_2='/home/alex/research/sCO2_reactor/optimization/inputs/mcnp'
+let g:netrw_dirhist_3='/home/alex/sandbox/compare_scale_mcnp'

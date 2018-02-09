@@ -40,11 +40,11 @@ export glab='git@gitlab.in2p3.fr:baaaaam/'
 
 # PATH for MCNP executables
 export PATH
-PATH="/home/alex/opt/MCNP/MCNP_CODE/bin:/home/alex/bin:/home/alex/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+PATH="/mnt/sdb/MCNP/MCNP_CODE/bin:/home/alex/bin:/home/alex/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
 
 # DATAPATH for MCNP cross-section data
 export DATAPATH
-DATAPATH="/home/alex/opt/MCNP/MCNP_DATA"
+DATAPATH="/mnt/sdb/MCNP/MCNP_DATA"
  
 alias matlab='/usr/local/bin/matlab'
 export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
@@ -54,9 +54,5 @@ alias pyne-install="python setup.py install --user -- -DMOAB_LIBRARY=/home/alex/
 alias condor="ssh aaswenson@aci-service-1.chtc.wisc.edu"
 alias wifi="sudo service network-manager restart"
 export PYTHONPATH=$HOME/.local/lib/python2.7/site-packages/PyTAPS-1.4-py2.7-linux-x86_64.egg
-export PATH=$PATH:/home/alex/opt/scale6.1/cmds/batch6.1
-alias batch6.1="~/opt/scale6.1/cmds/batch6.1"
-alias python="python -B"
-alias python3="python3 -B"
 
 
